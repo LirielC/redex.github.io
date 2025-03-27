@@ -1,0 +1,21 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.3">
+    <path d="M400 140C400 118.954 383.046 102 362 102C340.954 102 324 118.954 324 140C324 161.046 340.954 178 362 178C383.046 178 400 161.046 400 140Z" stroke="#2B6DFA" stroke-width="2"/>
+    <path d="M400 660C400 638.954 383.046 622 362 622C340.954 622 324 638.954 324 660C324 681.046 340.954 698 362 698C383.046 698 400 681.046 400 660Z" stroke="#2B6DFA" stroke-width="2"/>
+    <path d="M140 400C140 378.954 123.046 362 102 362C80.9543 362 64 378.954 64 400C64 421.046 80.9543 438 102 438C123.046 438 140 421.046 140 400Z" stroke="#2B6DFA" stroke-width="2"/>
+    <path d="M736 400C736 378.954 719.046 362 698 362C676.954 362 660 378.954 660 400C660 421.046 676.954 438 698 438C719.046 438 736 421.046 736 400Z" stroke="#2B6DFA" stroke-width="2"/>
+    <path d="M270 270C270 248.954 253.046 232 232 232C210.954 232 194 248.954 194 270C194 291.046 210.954 308 232 308C253.046 308 270 291.046 270 270Z" stroke="#20AEFF" stroke-width="2"/>
+    <path d="M606 270C606 248.954 589.046 232 568 232C546.954 232 530 248.954 530 270C530 291.046 546.954 308 568 308C589.046 308 606 291.046 606 270Z" stroke="#20AEFF" stroke-width="2"/>
+    <path d="M270 530C270 508.954 253.046 492 232 492C210.954 492 194 508.954 194 530C194 551.046 210.954 568 232 568C253.046 568 270 551.046 270 530Z" stroke="#20AEFF" stroke-width="2"/>
+    <path d="M606 530C606 508.954 589.046 492 568 492C546.954 492 530 508.954 530 530C530 551.046 546.954 568 568 568C589.046 568 606 551.046 606 530Z" stroke="#20AEFF" stroke-width="2"/>
+    <line x1="362" y1="179" x2="362" y2="621" stroke="#2B6DFA" stroke-width="2" stroke-dasharray="6 6"/>
+    <line x1="179" y1="400" x2="621" y2="400" stroke="#2B6DFA" stroke-width="2" stroke-dasharray="6 6"/>
+    <line x1="270.142" y1="268.858" x2="529.858" y2="528.574" stroke="#20AEFF" stroke-width="2" stroke-dasharray="6 6"/>
+    <line x1="271.556" y1="529.858" x2="531.272" y2="270.142" stroke="#20AEFF" stroke-width="2" stroke-dasharray="6 6"/>
+  </g>
+  <g opacity="0.1">
+    <circle cx="400" cy="400" r="300" stroke="#2B6DFA" stroke-width="2" stroke-dasharray="8 8"/>
+    <circle cx="400" cy="400" r="200" stroke="#2B6DFA" stroke-width="2" stroke-dasharray="8 8"/>
+    <circle cx="400" cy="400" r="100" stroke="#2B6DFA" stroke-width="2" stroke-dasharray="8 8"/>
+  </g>
+</svg>
