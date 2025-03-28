@@ -102,6 +102,7 @@ export function AnimatedElement({
   duration = 0.5,
   once = true,
   threshold = 0.1,
+  type = "fade",
 }: {
   children: React.ReactNode;
   className?: string;
@@ -109,6 +110,7 @@ export function AnimatedElement({
   duration?: number;
   once?: boolean;
   threshold?: number;
+  type?: keyof typeof defaultAnimationVariants;
 }) {
   return (
     <motion.div
@@ -119,10 +121,7 @@ export function AnimatedElement({
         once,
         amount: threshold
       }}
-      variants={{
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0 }
-      }}
+      variants={defaultAnimationVariants[type]}
       transition={{
         delay,
         duration,
@@ -142,8 +141,15 @@ export function AnimatedText({
   once = true,
   staggerChildren = 0.05,
   delayChildren = 0
-}: AnimatedElementProps & { staggerChildren?: number; delayChildren?: number }) {
-
+}: {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+  duration?: number;
+  once?: boolean;
+  staggerChildren?: number;
+  delayChildren?: number;
+}) {
   const headingVariants = {
     hidden: {},
     visible: {
@@ -152,7 +158,7 @@ export function AnimatedText({
         delayChildren
       }
     }
-  }
+  };
 
   const letterVariants = {
     hidden: {
@@ -163,7 +169,7 @@ export function AnimatedText({
       opacity: 1,
       y: 0
     }
-  }
+  };
 
   if (typeof children !== 'string') {
     return <>{children}</>;
@@ -174,9 +180,9 @@ export function AnimatedText({
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once, margin: "-100px" }}
+      viewport={{ once }}
       variants={headingVariants}
-      transition={{ delay, duration, ease: [0.25, 0.1, 0.25, 1.0] }}
+      transition={{ delay, duration, ease: "easeOut" }}
     >
       {children.split(' ').map((word, idx) => (
         <span key={idx} className="inline-block whitespace-nowrap mr-[0.25em]">
