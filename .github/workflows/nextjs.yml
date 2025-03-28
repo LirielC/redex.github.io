@@ -22,6 +22,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: List files
+        run: ls -la
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -30,13 +33,33 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Navigate and list files
+        run: |
+          cd arquitetura-rede-consultoria
+          ls -la
+          cat package.json
+
       - name: Install dependencies
         working-directory: ./arquitetura-rede-consultoria
-        run: npm install
+        run: |
+          npm install
+          npm list
 
       - name: Build
         working-directory: ./arquitetura-rede-consultoria
-        run: npm run build
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+          npm run build
+        env:
+          CI: false
+          NODE_OPTIONS: --max-old-space-size=4096
+
+      - name: List output directory
+        run: |
+          cd arquitetura-rede-consultoria
+          ls -la out || echo "out directory not found"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import { motion, Variants, HTMLMotionProps } from "framer-motion";
 import React from "react";
 
 export interface AnimatedElementProps {
@@ -46,30 +46,87 @@ const defaultAnimationVariants: Record<string, Variants> = {
   }
 };
 
-export function AnimatedElement({
-  children,
-  className,
-  delay = 0,
-  duration = 0.4,
-  once = true,
-  type = "fade",
-  rootMargin = "-100px",
-  threshold = 0.1,
-  animationVariants,
-}: AnimatedElementProps) {
-  const variants = animationVariants || defaultAnimationVariants[type];
+interface AnimatedProps extends HTMLMotionProps<"div"> {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+  duration?: number;
+  once?: boolean;
+  threshold?: number;
+  margin?: string;
+}
 
+const defaultAnimationConfig = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
+export function AnimatedDiv({
+  children,
+  className = "",
+  delay = 0,
+  duration = 0.5,
+  once = true,
+  threshold = 0.1,
+  margin = "50px",
+  variants = defaultAnimationConfig,
+  ...props
+}: AnimatedProps) {
   return (
     <motion.div
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once, rootMargin, threshold }}
+      viewport={{ 
+        once, 
+        amount: threshold,
+        margin 
+      }}
       variants={variants}
       transition={{
         delay,
         duration,
-        ease: [0.25, 0.1, 0.25, 1.0], // Cubic bezier easing
+        ease: "easeOut",
+      }}
+      {...props}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+export function AnimatedElement({
+  children,
+  className = "",
+  delay = 0,
+  duration = 0.5,
+  once = true,
+  threshold = 0.1,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+  duration?: number;
+  once?: boolean;
+  threshold?: number;
+}) {
+  return (
+    <motion.div
+      className={className}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ 
+        once,
+        amount: threshold
+      }}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 }
+      }}
+      transition={{
+        delay,
+        duration,
+        ease: "easeOut",
       }}
     >
       {children}
