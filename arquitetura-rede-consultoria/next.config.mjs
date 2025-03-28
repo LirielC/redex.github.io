@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true,
     domains: [
@@ -32,6 +33,8 @@ const nextConfig = {
       },
     ],
   },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/-NetArchitect-.github.io' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/-NetArchitect-.github.io' : '',
 };
 
 export default nextConfig;
