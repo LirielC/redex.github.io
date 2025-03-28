@@ -208,13 +208,13 @@ export default function ContactSection() {
                   <ContactInfoItem
                     icon={<RiMapPin2Line size={22} />}
                     title="Endereço"
-                    content="Av. Paulista, 1000, 15º andar, São Paulo - SP, 01310-100"
+                    content="Av. Medanha, 1000, 15º andar, Rio de Janeiro - RJ, 23010-100"
                   />
 
                   <ContactInfoItem
                     icon={<RiPhoneLine size={22} />}
                     title="Telefone"
-                    content="+55 (11) 98765-4321"
+                    content="+55 (21) 98765-4321"
                   />
 
                   <ContactInfoItem
