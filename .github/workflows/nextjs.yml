@@ -18,28 +18,26 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./arquitetura-rede-consultoria
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: npm
-          cache-dependency-path: './arquitetura-rede-consultoria/package-lock.json'
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
       - name: Install dependencies
-        run: npm ci
-      - name: Build with Next.js
+        working-directory: ./arquitetura-rede-consultoria
+        run: npm install
+
+      - name: Build
+        working-directory: ./arquitetura-rede-consultoria
         run: npm run build
-        env:
-          NODE_ENV: production
-      - name: Static HTML export with Next.js
-        run: npm run build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
