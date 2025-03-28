@@ -141,7 +141,7 @@ export default function Footer() {
                 <li className="flex gap-3 items-start">
                   <RiMapPinLine className="text-primary-500 mt-1 flex-shrink-0" />
                   <span className="text-gray-400">
-                    Av. Paulista, 1000, 15º andar, São Paulo - SP, 01310-100
+                    Av. Mendanha, 1000, 15º andar, Rio de Janeiro - RJ, 23010-100
                   </span>
                 </li>
                 <li className="flex gap-3 items-center">
@@ -153,7 +153,7 @@ export default function Footer() {
                 <li className="flex gap-3 items-center">
                   <RiPhoneLine className="text-primary-500 flex-shrink-0" />
                   <a href="tel:+551198765-4321" className="text-gray-400 hover:text-white">
-                    +55 (11) 98765-4321
+                    +55 (21) 98765-4321
                   </a>
                 </li>
                 <li className="flex gap-3 items-center">
