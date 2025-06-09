@@ -21,7 +21,7 @@ export default function ContactPage() {
       answer: "Realizamos uma análise completa da infraestrutura existente, incluindo mapeamento de rede, avaliação de equipamentos, análise de desempenho e identificação de vulnerabilidades. Utilizamos ferramentas especializadas e nossa equipe de consultores avalia todos os aspectos técnicos e operacionais."
     },
     {
-      question: "A NetArchitect oferece suporte após a implementação do projeto?",
+      question: "A Redex Cloud oferece suporte após a implementação do projeto?",
       answer: "Sim, oferecemos diversos níveis de suporte pós-implementação, desde monitoramento contínuo até suporte técnico 24/7. Temos planos de suporte que podem ser personalizados de acordo com as necessidades específicas de cada cliente."
     },
     {
@@ -29,7 +29,7 @@ export default function ContactPage() {
       answer: "Nossa equipe é composta por profissionais certificados nas principais tecnologias e fabricantes do mercado, incluindo Cisco (CCNA, CCNP, CCIE), Microsoft, AWS, CompTIA, ITIL, e certificações em segurança como CISSP e CEH, entre outras."
     },
     {
-      question: "A NetArchitect trabalha com empresas de pequeno porte?",
+      question: "A Redex Cloud trabalha com empresas de pequeno porte?",
       answer: "Sim, atendemos empresas de todos os portes, desde startups até grandes corporações. Temos soluções escaláveis que podem ser adaptadas de acordo com o tamanho e necessidades específicas de cada organização."
     }
   ];

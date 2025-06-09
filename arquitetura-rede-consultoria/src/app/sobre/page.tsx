@@ -18,7 +18,7 @@ export default function AboutPage() {
               <span className="inline-block px-3 py-1 text-sm font-medium bg-primary-50 text-primary-600 rounded-full mb-4">
                 Nossa História
               </span>
-              <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-5">Sobre a NetArchitect</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-5">Sobre a Redex Cloud</h1>
               <p className="text-lg text-text-secondary mb-8">
                 Somos uma consultoria especializada em arquitetura de redes, dedicada a transformar a infraestrutura
                 tecnológica de empresas através de soluções inovadoras e eficientes.
@@ -34,7 +34,7 @@ export default function AboutPage() {
               <AnimatedElement type="slide-right">
                 <h2 className="text-3xl font-bold text-text-primary mb-6">Nossa Trajetória</h2>
                 <p className="text-text-secondary mb-6">
-                  Fundada em 2012 por um grupo de engenheiros apaixonados por tecnologia, a NetArchitect nasceu
+                  Fundada em 2012 por um grupo de engenheiros apaixonados por tecnologia, a Redex Cloud nasceu
                   com a missão de oferecer consultoria de alto nível em arquitetura de redes para empresas de todos os portes.
                 </p>
                 <p className="text-text-secondary mb-6">
@@ -184,7 +184,7 @@ export default function AboutPage() {
 
               <AnimatedElement type="slide-up" delay={0.4}>
                 <TeamMember
-                  name="Amanda Fonseca"
+                  name="Luisa Guedes"
                   position="Especialista em Segurança"
                   bio="Profissional com amplo conhecimento em cibersegurança e conformidade com normativas internacionais."
                 />
@@ -192,8 +192,8 @@ export default function AboutPage() {
 
               <AnimatedElement type="slide-up" delay={0.5}>
                 <TeamMember
-                  name="Rodrigo Souza"
-                  position="Engenheiro de Redes Sênior"
+                  name="Gabriela Martins"
+                  position="Engenheira de Redes Sênior"
                   bio="Especialista em infraestrutura com foco em alta disponibilidade e redundância."
                 />
               </AnimatedElement>
@@ -226,7 +226,7 @@ export default function AboutPage() {
             </AnimatedElement>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-5xl mx-auto">
-              {/* Aqui seriam inseridos logos das certificações e parceiros */}
+              {/* Aqui seriam inseridos logos das certificações e parceiros kkkkk */}
               <Partner name="Cisco" />
               <Partner name="Microsoft" />
               <Partner name="AWS" />

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NetArchitect - Consultoria em Arquitetura de Redes",
+  title: "Redex Cloud - Consultoria em Arquitetura de Redes",
   description: "Soluções completas em design, implementação e otimização de infraestrutura de redes para empresas que buscam eficiência, segurança e escalabilidade.",
   keywords: [
     "arquitetura de redes",

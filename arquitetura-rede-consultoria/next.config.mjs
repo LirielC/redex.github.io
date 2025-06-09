@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/-NetArchitect-.github.io' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/-NetArchitect-.github.io' : '',
+  basePath: '',
+  assetPrefix: '',
   trailingSlash: true,
 };
 

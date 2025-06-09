@@ -25,7 +25,7 @@ export default function TestimonialsSection() {
       name: "Carlos Mendes",
       position: "Diretor de TI",
       company: "Tecnologias Avançadas S.A.",
-      content: "A consultoria da NetArchitect transformou nossa infraestrutura de rede. Tivemos uma redução de 40% nos incidentes e o desempenho melhorou significativamente. A equipe técnica é altamente qualificada e entregou o projeto no prazo estabelecido.",
+      content: "A consultoria da Redex Cloud transformou nossa infraestrutura de rede. Tivemos uma redução de 40% nos incidentes e o desempenho melhorou significativamente. A equipe técnica é altamente qualificada e entregou o projeto no prazo estabelecido.",
       rating: 5
     },
     {
@@ -33,7 +33,7 @@ export default function TestimonialsSection() {
       name: "Ana Luiza Gomes",
       position: "CTO",
       company: "Inovação Digital Ltda",
-      content: "Trabalhamos com a NetArchitect para implementar nossa solução de segurança de rede. A atenção aos detalhes e o conhecimento técnico nos impressionaram desde o início. O suporte pós-implementação continua excelente meses depois.",
+      content: "Trabalhamos com a Redex Cloud para implementar nossa solução de segurança de rede. A atenção aos detalhes e o conhecimento técnico nos impressionaram desde o início. O suporte pós-implementação continua excelente meses depois.",
       rating: 5
     },
     {
@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
       name: "Ricardo Oliveira",
       position: "Gerente de Infraestrutura",
       company: "Grupo Financeiro Nacional",
-      content: "A migração para a nuvem parecia um desafio imenso até contratarmos a NetArchitect. Sua abordagem metodológica e experiência nos guiaram por todo o processo com segurança. Os resultados superaram nossas expectativas.",
+      content: "A migração para a nuvem parecia um desafio imenso até contratarmos a Redex Cloud. Sua abordagem metodológica e experiência nos guiaram por todo o processo com segurança. Os resultados superaram nossas expectativas.",
       rating: 4
     },
     {
@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
       name: "Mariana Costa",
       position: "CEO",
       company: "Startec Inovações",
-      content: "Como uma startup em crescimento, precisávamos de uma infraestrutura escalável desde o início. A consultoria da NetArchitect nos ajudou a construir uma base sólida que acompanha nosso crescimento sem dores de cabeça.",
+      content: "Como uma startup em crescimento, precisávamos de uma infraestrutura escalável desde o início. A consultoria da Redex Cloud nos ajudou a construir uma base sólida que acompanha nosso crescimento sem dores de cabeça.",
       rating: 5
     },
     {
@@ -57,7 +57,7 @@ export default function TestimonialsSection() {
       name: "Fernando Santos",
       position: "Diretor de Operações",
       company: "Rede Comércio Eletrônico",
-      content: "Após vários problemas recorrentes com nosso provedor anterior, a NetArchitect implementou uma solução que eliminou nossas quedas de conexão e melhorou significativamente a experiência de nossos clientes online.",
+      content: "Após vários problemas recorrentes com nosso provedor anterior, a Redex Cloud implementou uma solução que eliminou nossas quedas de conexão e melhorou significativamente a experiência de nossos clientes online.",
       rating: 5
     }
   ];

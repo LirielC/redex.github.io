@@ -77,7 +77,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16">
           <AnimatedElement type="fade" delay={0.1}>
             <div>
-              <h3 className="font-bold text-xl mb-6">NetArchitect</h3>
+              <h3 className="font-bold text-xl mb-6">Redex Cloud</h3>
               <p className="text-gray-400 mb-6 max-w-xs">
                 Soluções completas em arquitetura de redes, garantindo eficiência,
                 segurança e escalabilidade para seu negócio.
@@ -146,8 +146,8 @@ export default function Footer() {
                 </li>
                 <li className="flex gap-3 items-center">
                   <RiMailLine className="text-primary-500 flex-shrink-0" />
-                  <a href="mailto:contato@netarchitect.com.br" className="text-gray-400 hover:text-white">
-                    contato@netarchitect.com.br
+                          <a href="mailto:contato@redexcloud.com.br" className="text-gray-400 hover:text-white">
+          contato@redexcloud.com.br
                   </a>
                 </li>
                 <li className="flex gap-3 items-center">
@@ -169,7 +169,7 @@ export default function Footer() {
 
         <div className="border-t border-dark-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {currentYear} NetArchitect. Todos os direitos reservados.
+            &copy; {currentYear} Redex Cloud. Todos os direitos reservados.
           </p>
           <div className="flex flex-wrap gap-6 text-sm">
             <Link href="/termos" className="text-gray-400 hover:text-white transition-colors">

@@ -128,7 +128,7 @@ export default function Header() {
           className="relative z-20 flex items-center gap-2"
         >
           <span className="text-primary-500 font-bold text-xl sm:text-2xl">
-            NetArchitect
+            Redex Cloud
           </span>
           {!isScrolled && (
             <motion.span

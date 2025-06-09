@@ -220,7 +220,7 @@ export default function ContactSection() {
                   <ContactInfoItem
                     icon={<RiMailLine size={22} />}
                     title="E-mail"
-                    content="contato@netarchitect.com.br"
+                    content="contato@redexcloud.com.br"
                   />
 
                   <ContactInfoItem
