@@ -4,9 +4,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '',
-  assetPrefix: '',
+  // Configuração para GitHub Pages
+  basePath: process.env.NODE_ENV === 'production' ? '/RedexCloud.github.io' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/RedexCloud.github.io/' : '',
   trailingSlash: true,
+  // Garante que a exportação estática funcione corretamente
+  distDir: 'out',
 };
 
 export default nextConfig;
